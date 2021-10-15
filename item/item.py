@@ -78,6 +78,24 @@ class Item:
 
 	
 
+	def connect(self, smpt_server):
+		pass 
+
+	def prepare_body(self):
+		return f"""
+		 Hello Someone.
+		 We have {self.name} {self.quantity} times.
+		 Regards, RisasiCodingAcademy
+		"""
+
+	def send(self):
+		pass 
+
+	def send_email(self):
+		self.connect()
+		self.prepare_body()
+		self.send()
+
 	# Property Decorator = Read Only Attribute
 	@property
 	def name(self):
