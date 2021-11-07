@@ -1,7 +1,7 @@
 # pip install qrcode
 import pyqrcode
 import png
-from pyqrcode mport QRCode 
+from pyqrcode import QRCode 
 
 s = 'Python.hub'
 
