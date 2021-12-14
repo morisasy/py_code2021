@@ -34,6 +34,11 @@ class Customer:
     @name.setter
     def name(self, name):
         self._name = name
+    @name.deleter
+    def name(self, name):
+        print("setting name")
+        self._name = name
+        
 
     def __str__(self):
         print("converting to string")
