@@ -27,6 +27,14 @@ class Customer:
         """
         self.membership_type = new_membership_type
 
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        self._name = name
+
     def __str__(self):
         print("converting to string")
         return f"{self.name} {self.membership_type}"
